@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  .container {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    input {
+      margin: 10px;
+    }
+    #generatePasswordBtn {
+      margin: 10px;
+    }
+    .outputContainer {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      .password {
+        height: 20px;
+        min-width: 300px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
