@@ -14,8 +14,12 @@ function generatePassword() {
   const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numbers = "0123456789";
   const symbols = "!@#$%^&*()_+[]{}|;:,.<>?";
+  //3.
+  let generator = lowercaseLetters;
+  if (includenumbers) generator += numbers;
+  if (includesymbols) generator += symbols;
+  if (uppercase) generator += uppercaseLetters;
 }
-
 //last
 function copypaste() {
   const passwordText = document.getElementById("passwordOutput").innerHTML;
