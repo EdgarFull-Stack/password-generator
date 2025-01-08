@@ -19,7 +19,10 @@ function generatePassword() {
   if (includenumbers) generator += numbers;
   if (includesymbols) generator += symbols;
   if (uppercase) generator += uppercaseLetters;
+  //4.
+  const random = Math.floor(Math.random() * generator.length);
 }
+
 //last
 function copypaste() {
   const passwordText = document.getElementById("passwordOutput").innerHTML;
