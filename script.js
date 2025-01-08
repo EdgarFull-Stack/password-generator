@@ -5,7 +5,7 @@ Generatebutton.addEventListener("click", generatePassword);
 Copybutton.addEventListener("click", copypaste);
 //2.
 function generatePassword() {
-  const lenght = document.querySelector("passwordLenght").value;
+  const length = document.querySelector("passwordLenght").value;
   const uppercase = document.querySelector("includeUppercase").checked;
   const includenumbers = document.querySelector("includeNumbers").checked;
   const includesymbols = document.querySelector("includeSymbols").checked;
@@ -20,7 +20,9 @@ function generatePassword() {
   if (includesymbols) generator += symbols;
   if (uppercase) generator += uppercaseLetters;
   //4.
-  const random = Math.floor(Math.random() * generator.length);
+  for (let i = 0; i < length; i++) {
+    const random = Math.floor(Math.random() * generator.length);
+  }
 }
 
 //last
