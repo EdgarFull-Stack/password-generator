@@ -1,14 +1,14 @@
 //1.
-const Generatebutton = document.querySelector("generatePasswordBtn");
-const Copybutton = document.querySelector("copyPasswordBtn");
+const Generatebutton = document.querySelector("#generatePasswordBtn");
+const Copybutton = document.querySelector("#copyPasswordBtn");
 Generatebutton.addEventListener("click", generatePassword);
 Copybutton.addEventListener("click", copypaste);
 //2.
 function generatePassword() {
-  const length = document.querySelector("passwordLenght").value;
-  const uppercase = document.querySelector("includeUppercase").checked;
-  const includenumbers = document.querySelector("includeNumbers").checked;
-  const includesymbols = document.querySelector("includeSymbols").checked;
+  const length = parseInt(document.querySelector("#passwordLength").value);
+  const uppercase = document.querySelector("#includeUppercase").checked;
+  const includenumbers = document.querySelector("#includeNumbers").checked;
+  const includesymbols = document.querySelector("#includeSymbols").checked;
 
   const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
   const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -20,9 +20,12 @@ function generatePassword() {
   if (includesymbols) generator += symbols;
   if (uppercase) generator += uppercaseLetters;
   //4.
+  let password = "";
   for (let i = 0; i < length; i++) {
     const random = Math.floor(Math.random() * generator.length);
+    password += generator[random];
   }
+  console.log(password);
 }
 
 //last
