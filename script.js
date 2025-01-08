@@ -25,10 +25,12 @@ function generatePassword() {
     const random = Math.floor(Math.random() * generator.length);
     password += generator[random];
   }
-  console.log(password);
+  //5.
+  let outputarea = document.querySelector("#passwordOutput");
+  outputarea.innerHTML = password;
 }
 
-//last
+//6.
 function copypaste() {
   const passwordText = document.getElementById("passwordOutput").innerHTML;
   if (passwordText) {
