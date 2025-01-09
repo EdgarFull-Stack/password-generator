@@ -1,14 +1,14 @@
 body {
   text-align: center;
+  font-family: "Roboto", serif;
   .container {
     width: 400px;
     padding: 20px;
     text-align: center;
-    border: 1px solid black;
     border-radius: 5px;
     box-shadow: 1px 1px 0.5px 0.5px grey;
     margin: 0 auto;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(219, 219, 219);
     input {
       margin: 10px;
       box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
@@ -36,13 +36,16 @@ body {
       font-weight: bold;
       background-color: white;
     }
+    #copyPasswordBtn:hover {
+      background-color: greenyellow;
+    }
     .outputContainer {
       display: flex;
       justify-content: center;
       margin: 10px;
 
       .password {
-        height: 20px;
+        height: 25px;
         min-width: 300px;
         border: 1px solid black;
         border-radius: 5px;
