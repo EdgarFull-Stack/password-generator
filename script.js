@@ -6,6 +6,9 @@ Copybutton.addEventListener("click", copypaste);
 //2.
 function generatePassword() {
   const length = parseInt(document.querySelector("#passwordLength").value);
+  if (isNaN(length) || length <= 0) {
+    alert("Please enter your number");
+  }
   const uppercase = document.querySelector("#includeUppercase").checked;
   const includenumbers = document.querySelector("#includeNumbers").checked;
   const includesymbols = document.querySelector("#includeSymbols").checked;
