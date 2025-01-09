@@ -9,6 +9,7 @@ body .container {
   border-radius: 5px;
   box-shadow: 1px 1px 0.5px 0.5px grey;
   margin: 0 auto;
+  background-color: rgb(206, 206, 206);
 }
 body .container input {
   margin: 10px;
@@ -24,12 +25,18 @@ body .container #generatePasswordBtn {
   margin: 10px;
   border-radius: 5px;
   border: 1px solid black;
-  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+  background-color: white;
   padding: 10px;
   font-weight: bold;
 }
 body .container #generatePasswordBtn:hover {
   background-color: greenyellow;
+}
+body .container #copyPasswordBtn {
+  border-radius: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+  background-color: white;
 }
 body .container .outputContainer {
   display: flex;
@@ -43,4 +50,5 @@ body .container .outputContainer .password {
   border-radius: 5px;
   margin-right: 10px;
   box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
