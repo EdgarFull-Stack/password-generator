@@ -6,8 +6,8 @@ Copybutton.addEventListener("click", copypaste);
 //2.
 function generatePassword() {
   const length = parseInt(document.querySelector("#passwordLength").value);
-  if (isNaN(length) || length <= 0) {
-    alert("Please enter your number");
+  if (isNaN(length) || length <= 0 || length > 32) {
+    alert("Please enter your number that will be no less than 32");
   }
   const uppercase = document.querySelector("#includeUppercase").checked;
   const includenumbers = document.querySelector("#includeNumbers").checked;
